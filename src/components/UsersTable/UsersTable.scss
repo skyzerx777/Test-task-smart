@@ -1,0 +1,62 @@
+.table {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 4px solid #019878;
+	font-size: 12px;
+
+	@media (min-width: 1024px) {
+		font-size: 14px;
+	}
+
+	@media (min-width: 1280px) {
+		font-size: 16px;
+	}
+
+	&:nth-child(0) {
+		row-gap: 0;
+	}
+
+	&__input {
+		margin-top: 8px;
+		padding: 8px 15px;
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+		--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+		box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+	}
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 6px;
+
+	&_head {
+		font-weight: 700;
+		background-color: #019878;
+		border-radius: inherit;
+		color: #f4f3f2;
+	}
+
+	&_even {
+		background-color: rgb(231, 231, 231);
+		color: #019878;
+	}
+}
+
+.col {
+	width: 25%;
+	padding: 12px;
+	overflow-wrap: break-word;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
